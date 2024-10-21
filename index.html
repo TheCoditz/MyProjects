@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Compass | Navigate Your Professional Future</title>
+    <meta name="description" content="Discover your ideal career path with Career Compass. Take our engaging quiz for personalized suggestions and navigate your way to a fulfilling profession!">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-compass"></i>
+                <span>Career Compass</span>
+            </div>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#quiz"><i class="fas fa-question-circle"></i> Career Quiz</a></li>
+                <li><a href="#login"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Navigate Your Professional Future</h1>
+            <p>Embark on a journey to unlock your potential and find your perfect career path with Career Compass!</p>
+            <a href="#quiz" class="cta-button">Start Your Journey <i class="fas fa-compass"></i></a>
+        </section>
+
+        <section id="about">
+            <h2>About Career Compass</h2>
+            <p>Welcome to Career Compass, your guide to exploring and choosing the right career. We simplify the process for students and young professionals by providing personalized tools and insights.</p>
+
+            <h3>Our Mission</h3>
+            <p>We help you discover careers that fit your unique talents and passions, offering personalized guidance and comprehensive resources.</p>
+            
+            <h3>What We Offer</h3>
+            <ul>
+                <li><strong>Career Quiz:</strong> AI-powered quiz to match your interests with career paths.</li>
+                <li><strong>Career Database:</strong> Explore detailed career options, skills, and trends.</li>
+                <li><strong>Expert Advice:</strong> Get insights from industry professionals.</li>
+            </ul>
+            
+            <h3>Join Us</h3>
+            <p>Wherever you are in your career journey, Career Compass is here to guide you toward success!</p>
+            
+        </section>
+
+        <section id="quiz">
+            <h2>Career Discovery Quiz</h2>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <form id="quiz-form">
+                <!-- Quiz questions will be dynamically inserted here -->
+            </form>
+        </section>
+
+        <section id="results" style="display: none;">
+            <h2>Your Career Suggestions</h2>
+            <div id="career-suggestions">
+                <!-- Career suggestions will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <p>"Career Compass helped me discover my true calling. I'm now pursuing a career I'm passionate about!"</p>
+                    <cite>- Sarah J., Graphic Designer</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"The career suggestions were spot-on! I found a field I never considered before, and it's perfect for me."</p>
+                    <cite>- Michael T., Data Scientist</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"This quiz gave me the confidence to pursue my dreams. Thank you, Career Compass!"</p>
+                    <cite>- Emily R., Entrepreneur</cite>
+                </div>
+            </div>
+        </section>
+
+        <section id="inspiration">
+            <h2>Words of Wisdom</h2>
+            <div class="quote-container">
+                <blockquote>"Choose a job you love, and you will never have to work a day in your life."</blockquote>
+                <cite>- Confucius</cite>
+            </div>
+            <div class="quote-container">
+                <blockquote>"The future belongs to those who believe in the beauty of their dreams."</blockquote>
+                <cite>- Eleanor Roosevelt</cite>
+            </div>
+            <div class="quote-container">
+                <blockquote>"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."</blockquote>
+                <cite>- Albert Schweitzer</cite>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2>Explore Career Options</h2>
+            <div class="career-grid">
+                <div class="career-card">
+                    <h3>Data Scientist</h3>
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="career-card">
+                    <h3>Environmental Scientist</h3>
+                    
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="career-card">
+                    <h3>Civil Engineer</h3>
+                   
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="career-card">
+                    <h3>Artificial Intelligence Engineer</h3>
+                   
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="career-card">
+                    <h3>Healthcare Administrator</h3>
+                    
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="career-card">
+                    <h3>Marketing Strategist</h3>
+                    
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="career-card">
+                    <h3>Robotics Engineer</h3>
+                   
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="career-card">
+                    <h3>Social Worker</h3>
+                    
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+                <div class="career-card">
+                    <h3>Game Designer</h3>
+                    
+                    <a href="#" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Have questions or need personalized career advice? We're here to help!</p>
+            <a href="mailto:info@careercompass.com" class="cta-button">Contact Us</a>
+        </section>
+
+        <section id="login">
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" id="submit-login" class="login-button submit-login">
+                    <i class="fas fa-sign-in-alt"></i> Submit
+                </button>
+                <div class="login-options">
+                    <button type="button" id="google-login" class="login-button google-login">
+                        <i class="fab fa-google"></i> Login with Google
+                    </button>
+                    <button type="button" id="facebook-login" class="login-button facebook-login">
+                        <i class="fab fa-facebook-f"></i> Login with Facebook
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Add this new section after the login section -->
+        <section id="login-history" style="display: none;">
+            <h2>User Login History</h2>
+            <table id="login-history-table">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Timestamp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Login history will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Add this new section after the login section -->
+        <section id="admin-login" style="display: none;">
+          <h2>Admin Login</h2>
+          <form id="admin-login-form">
+            <input type="email" id="admin-email" placeholder="Admin Email" required>
+            <input type="password" id="admin-password" placeholder="Admin Password" required>
+            <button type="submit" id="submit-admin-login" class="login-button submit-login">
+              <i class="fas fa-sign-in-alt"></i> Admin Login
+            </button>
+          </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Career Compass. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
