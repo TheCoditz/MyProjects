@@ -903,9 +903,4 @@ form::before {
     background-color: #c0392b;
     transform: translateY(-3px);
 }
-
-@media (max-width: 768px) {
-    nav.hidden {
-        display: none;
-    }
 }
