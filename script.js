@@ -314,6 +314,9 @@ function retakeQuiz() {
 
     // Scroll to the quiz section
     document.getElementById('quiz').scrollIntoView({ behavior: 'smooth' });
+
+    // Show the navbar again when retaking the quiz
+    showNavbar();
 }
 
 function generatePersonalizedComment(careerTitle, userDescription) {
@@ -373,11 +376,28 @@ function toggleMenu() {
 }
 
 function startJourney() {
-    document.getElementById('home').style.display = 'block';
-    document.getElementById('quiz').scrollIntoView({ behavior: 'smooth' });
+    // Hide the home section
+    document.getElementById('home').style.display = 'none';
     
-    document.getElementById('quiz').style.display = 'block';
+    // Show the quiz section
+    const quizSection = document.getElementById('quiz');
+    quizSection.style.display = 'block';
+    
+    // Hide the navbar on mobile devices
+    if (window.innerWidth <= 768) {
+        document.querySelector('nav').classList.add('hidden');
+    }
+    
+    // Scroll to the quiz section without smooth scrolling
+    quizSection.scrollIntoView(true);
+    
+    // Initialize the quiz
     initQuiz();
+}
+
+// Add this new function to show the navbar again
+function showNavbar() {
+    document.querySelector('nav').classList.remove('hidden');
 }
 
 function addSkillsAssessment() {
