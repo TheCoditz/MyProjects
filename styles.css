@@ -904,5 +904,8 @@ form::before {
     transform: translateY(-3px);
 }
 
-
-
+@media (max-width: 768px) {
+    nav.hidden {
+        display: none;
+    }
+}
